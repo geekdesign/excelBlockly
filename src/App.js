@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+        <div className="flex h-96">
+            <div className="basis-2/3 px-6 py-3" >
+                <h2 className="font-semibold" >Concevez votre formule EXCEL de manière visuel</h2>
+            </div>
+            <div  className="basis-1/3 px-6 py-3" >
+                <h2 className="font-semibold" >Rendu de la formule a copier dans Excel</h2>
+            </div>
+        </div>
+    </>
   );
 }
 
